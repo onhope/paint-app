@@ -11,6 +11,7 @@ li {
 
 body {
   background-color: #384047;
+  /* 중앙정렬 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,8 +21,8 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 40px 600px;
-  column-gap: 10px;
+  grid-template-columns: 40px 600px; /* 1열 width 40px 2열 width 600px */
+  column-gap: 10px;   /* 열사이 간격 */
 }
 
 button {

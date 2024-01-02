@@ -45,10 +45,10 @@ function startErasing(e) {
 }
 
 function downloadCanvas() {
-  const image = canvas.toDataURL("image/png", 1.0);
-  const linkEl = document.createElement('a');
-  linkEl.href = image;
-  linkEl.download = 'PaintApp';
+  const image = canvas.toDataURL("image/png", 1.0); //  PNG 이미지를 생성, 0-1 사이의 품질을 제공, 1은 고화질 
+  const linkEl = document.createElement('a'); // a 태그 생성 
+  linkEl.href = image; // a태그의 href 속성의 값은 대입
+  linkEl.download = 'PaintApp'; // a태그에 download속성이 있으면 링크가 가르키는 파일을 다운로드 
   linkEl.click();
 }
 
